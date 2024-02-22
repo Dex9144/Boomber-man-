@@ -1,17 +1,32 @@
-z# This is a sample Python script.
+import arcade
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+SCREEN_WIDTH = 660
+SCREEN_HEIGHT = 660
+SCREEN_TITLE = "Bomberman"
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+class Game(arcade.Window):
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-ghi
+    def __init__(self, width, height, title):
+        super().__init__(width, height, title)
+        self.setup()
+
+    def setup(self):
+        pass
+
+    def on_draw(self):
+        self.clear()
+
+    def update(self, delta_time):
+        pass
+
+    def on_key_press(self, key, modifiers):
+        pass
+
+    def on_key_release(self, key, modifiers):
+        pass
+
+
+window = Game(SCREEN_WIDTH, SCREEN_HEIGHT, SCREEN_TITLE)
+
+arcade.run()
